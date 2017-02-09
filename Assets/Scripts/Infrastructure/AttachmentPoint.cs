@@ -10,7 +10,6 @@ namespace Assets.Scripts.Infrastructure
 {
     public class AttachmentPoint : MonoBehaviour
     {
-        public Vector2 Origin;
         public AttachmentType Type;
         public Attachment Attachment;
     }

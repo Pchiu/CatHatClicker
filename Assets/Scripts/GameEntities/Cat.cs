@@ -64,7 +64,7 @@ namespace Assets.Scripts.GameEntities
                 return false;
             }
             openAttachmentPoint.Attachment = attachment;
-            attachment.transform.position = transform.position + new Vector3(openAttachmentPoint.Origin.x, openAttachmentPoint.Origin.y, -1) + new Vector3(attachment.Origin.x, attachment.Origin.y, 0);
+            attachment.transform.position = transform.position + new Vector3(openAttachmentPoint.transform.position.x, openAttachmentPoint.transform.position.y, -1) + new Vector3(attachment.Origin.x, attachment.Origin.y, 0);
             UpdateValue();
             return true;
         }
